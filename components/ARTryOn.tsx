@@ -352,48 +352,47 @@ export default function ARTryOn() {
           </div>
         )}
 
-        {cameraActive && (
-          <div className="relative aspect-[4/3]">
-            <video
-              ref={videoRef}
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ transform: 'scaleX(-1)' }}
-              playsInline
-              muted
-            />
-            <canvas
-              ref={overlayCanvasRef}
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-              style={{ transform: 'scaleX(-1)' }}
-            />
-            
-            {/* Controls overlay */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
-              <button
-                onClick={takeScreenshot}
-                className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/40 flex items-center justify-center hover:bg-white/30 transition-all"
-                title="Uslikaj"
-              >
-                <div className="w-10 h-10 rounded-full border-2 border-white" />
-              </button>
-              <button
-                onClick={stopCamera}
-                className="w-14 h-14 rounded-full bg-red-500/60 backdrop-blur-md border-2 border-red-400/40 flex items-center justify-center hover:bg-red-500/80 transition-all"
-                title="Zaustavi kameru"
-              >
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="6" y="6" width="12" height="12" rx="1" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Wig name overlay */}
-            <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md rounded-full px-4 py-2">
-              <span className="text-[#C9A96E] text-sm font-semibold">{selectedWig.name}</span>
-              <span className="text-white/60 text-xs ml-2">{selectedWig.price}</span>
-            </div>
+        {/* Video & overlay always mounted so refs are available; hidden until camera is active */}
+        <div className={`relative aspect-[4/3] ${cameraActive ? '' : 'hidden'}`}>
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ transform: 'scaleX(-1)' }}
+            playsInline
+            muted
+          />
+          <canvas
+            ref={overlayCanvasRef}
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            style={{ transform: 'scaleX(-1)' }}
+          />
+          
+          {/* Controls overlay */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
+            <button
+              onClick={takeScreenshot}
+              className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/40 flex items-center justify-center hover:bg-white/30 transition-all"
+              title="Uslikaj"
+            >
+              <div className="w-10 h-10 rounded-full border-2 border-white" />
+            </button>
+            <button
+              onClick={stopCamera}
+              className="w-14 h-14 rounded-full bg-red-500/60 backdrop-blur-md border-2 border-red-400/40 flex items-center justify-center hover:bg-red-500/80 transition-all"
+              title="Zaustavi kameru"
+            >
+              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <rect x="6" y="6" width="12" height="12" rx="1" />
+              </svg>
+            </button>
           </div>
-        )}
+
+          {/* Wig name overlay */}
+          <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md rounded-full px-4 py-2">
+            <span className="text-[#C9A96E] text-sm font-semibold">{selectedWig.name}</span>
+            <span className="text-white/60 text-xs ml-2">{selectedWig.price}</span>
+          </div>
+        </div>
         
         <canvas ref={canvasRef} className="hidden" />
       </div>
