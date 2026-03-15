@@ -1,473 +1,246 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 
-interface Wig {
-  id: string;
+interface WigStyle {
+  id: number;
   name: string;
-  nameEn: string;
-  image: string;
-  price: string;
-  offsetY: number;  // vertical offset from forehead
-  scaleX: number;   // width multiplier relative to face
-  scaleY: number;   // height multiplier
+  thumb: string;
+  styleGroupId: number;
+  taskType: string;
 }
 
-const WIGS: Wig[] = [
-  {
-    id: 'balayage',
-    name: 'Balayage Ombre Ash Blonde',
-    nameEn: 'Balayage Ombre Ash Blonde',
-    image: '/images/perika-balayage-ash.jpg',
-    price: 'KM 1.600',
-    offsetY: -0.45,
-    scaleX: 1.8,
-    scaleY: 1.6,
-  },
-  {
-    id: 'platinum',
-    name: 'Platinum Valovita',
-    nameEn: 'Platinum Wavy',
-    image: '/images/perika-platinum-valovita.jpg',
-    price: 'KM 1.600',
-    offsetY: -0.45,
-    scaleX: 1.8,
-    scaleY: 1.6,
-  },
+const STYLES: WigStyle[] = [
+  // Hairstyles - Female
+  { id: 219691778809272449, name: 'Soft Brown Flip', thumb: 'https://cdn.perfectcorp.com/cms/5b2b41ff-bee7-47e6-a343-90099a8970df/175506725166010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809272434, name: 'Wavy Bob & Bangs', thumb: 'https://cdn.perfectcorp.com/cms/ee0701fc-1cf9-4ed2-a3f9-25d966425c63/175272419944010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809272322, name: 'Blunt Fringe Straight', thumb: 'https://cdn.perfectcorp.com/cms/c00f11f9-a0f6-46a9-851e-32d387722d7b/175307253555010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809272394, name: 'Dark C-Curl Layers', thumb: 'https://cdn.perfectcorp.com/cms/11653247-0630-4ba4-ac4c-757aeefdc48b/175308687235010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271190, name: 'Brown Wavy Undercut', thumb: 'https://cdn.perfectcorp.com/cms/4219a15b-b2c9-46a0-8577-67f43160e562/174737897369010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271466, name: 'Dark Lob & Bangs', thumb: 'https://cdn.perfectcorp.com/cms/27c95f02-a392-48b6-81c0-49e385edc734/174883179649010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271580, name: 'Tousled Bob', thumb: 'https://cdn.perfectcorp.com/cms/948bbfcb-ec05-4e82-a084-c6db61480a1f/174892407444010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271111, name: 'S-Wave Brunette', thumb: 'https://cdn.perfectcorp.com/cms/10c2e901-3a63-4190-8189-a3d44276ef1d/174676122188010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271034, name: 'Dark Wooly Curls', thumb: 'https://cdn.perfectcorp.com/cms/29ebfbcb-e50b-49fa-8bdd-15f9da127fac/174676189431010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809271047, name: 'Soft Chestnut Midcut', thumb: 'https://cdn.perfectcorp.com/cms/992d610d-23a9-48be-824c-02345d756507/174677997519010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809270052, name: 'Retro Brown Waves', thumb: 'https://cdn.perfectcorp.com/cms/9e78a455-ae3c-4b96-8865-6cc553df35a0/174046908091010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  { id: 219691778809269965, name: 'Caramel Bubble Bob', thumb: 'https://cdn.perfectcorp.com/cms/19a66ff0-e009-48dd-a0c2-b910c4e30129/174235236418010.jpg', styleGroupId: 13600839, taskType: 'hair-style' },
+  // Wigs
+  { id: 1004, name: 'Bob', thumb: 'https://yce-us-cdn.perfectcorp.com/static/prompt/female/f369434a-024e-4a77-8e67-009a8de7cd14.jpg', styleGroupId: 71, taskType: 'wig' },
+  { id: 1009, name: 'Curly Long', thumb: 'https://yce-us-cdn.perfectcorp.com/static/prompt/female/f369434a-024e-4a77-8e67-009a8de7cd14.jpg', styleGroupId: 71, taskType: 'wig' },
+  { id: 1010, name: 'Straight Long', thumb: 'https://yce-us-cdn.perfectcorp.com/static/prompt/female/f369434a-024e-4a77-8e67-009a8de7cd14.jpg', styleGroupId: 71, taskType: 'wig' },
+  { id: 1006, name: 'Very Short', thumb: 'https://yce-us-cdn.perfectcorp.com/static/prompt/female/f369434a-024e-4a77-8e67-009a8de7cd14.jpg', styleGroupId: 71, taskType: 'wig' },
 ];
 
 export default function ARTryOn() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const overlayCanvasRef = useRef<HTMLCanvasElement>(null);
-  const [selectedWig, setSelectedWig] = useState<Wig>(WIGS[0]);
-  const [cameraActive, setCameraActive] = useState(false);
+  const [selectedStyle, setSelectedStyle] = useState<WigStyle>(STYLES[0]);
+  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
+  const [resultImage, setResultImage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [faceLandmarker, setFaceLandmarker] = useState<any>(null);
-  const wigImageRef = useRef<HTMLImageElement | null>(null);
-  const animFrameRef = useRef<number>(0);
-  const [screenshot, setScreenshot] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Load wig image when selection changes
-  useEffect(() => {
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.src = selectedWig.image;
-    img.onload = () => {
-      wigImageRef.current = img;
-    };
-  }, [selectedWig]);
+  const handleFileUpload = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
 
-  const initFaceLandmarker = useCallback(async () => {
-    try {
-      const vision = await import('@mediapipe/tasks-vision');
-      const { FaceLandmarker, FilesetResolver } = vision;
-      
-      const filesetResolver = await FilesetResolver.forVisionTasks(
-        'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.18/wasm'
-      );
-      
-      // Try GPU first, fall back to CPU
-      let landmarker: any = null;
-      for (const delegate of ['GPU', 'CPU'] as const) {
-        try {
-          landmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
-            baseOptions: {
-              modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task',
-              delegate,
-            },
-            outputFaceBlendshapes: false,
-            outputFacialTransformationMatrixes: true,
-            runningMode: 'VIDEO',
-            numFaces: 1,
-          });
-          break;
-        } catch (e) {
-          console.warn(`FaceLandmarker ${delegate} delegate failed:`, e);
-          if (delegate === 'CPU') throw e;
-        }
-      }
-      
-      setFaceLandmarker(landmarker);
-      return landmarker;
-    } catch (err) {
-      console.error('Failed to load face landmarker:', err);
-      setError('Nije moguće učitati detekciju lica. Pokušajte ponovo.');
-      return null;
+    // Validate
+    if (!file.type.startsWith('image/')) {
+      setError('Molimo odaberite sliku.');
+      return;
     }
+    if (file.size > 10 * 1024 * 1024) {
+      setError('Slika mora biti manja od 10MB.');
+      return;
+    }
+
+    setError(null);
+    setResultImage(null);
+
+    // Read and resize
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => {
+        // Resize to max 1024px on long side (API requirement)
+        const maxDim = 1024;
+        let { width, height } = img;
+        if (width > maxDim || height > maxDim) {
+          if (width > height) {
+            height = Math.round((height * maxDim) / width);
+            width = maxDim;
+          } else {
+            width = Math.round((width * maxDim) / height);
+            height = maxDim;
+          }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d')!;
+        ctx.drawImage(img, 0, 0, width, height);
+        const resized = canvas.toDataURL('image/jpeg', 0.9);
+        setUploadedImage(resized);
+      };
+      img.src = ev.target?.result as string;
+    };
+    reader.readAsDataURL(file);
   }, []);
 
-  const startCamera = async () => {
+  const handleTryOn = useCallback(async () => {
+    if (!uploadedImage) return;
     setLoading(true);
     setError(null);
-    
+    setResultImage(null);
+
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: { 
-          facingMode: 'user', 
-          width: { ideal: 640 }, 
-          height: { ideal: 480 } 
-        },
+      const res = await fetch('/api/try-on', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          image: uploadedImage,
+          styleGroupId: selectedStyle.styleGroupId,
+          styleId: selectedStyle.id,
+          taskType: selectedStyle.taskType,
+        }),
       });
-      
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-        await videoRef.current.play();
-      }
-      
-      let landmarker = faceLandmarker;
-      if (!landmarker) {
-        landmarker = await initFaceLandmarker();
-      }
-      
-      if (landmarker && videoRef.current) {
-        setCameraActive(true);
-        detectFaces(landmarker);
-      } else {
-        // Model failed to load — stop camera stream
-        if (videoRef.current?.srcObject) {
-          const tracks = (videoRef.current.srcObject as MediaStream).getTracks();
-          tracks.forEach((t) => t.stop());
-          videoRef.current.srcObject = null;
-        }
-      }
-    } catch (err) {
-      console.error('Camera error:', err);
-      setError('Nije moguće pristupiti kameri. Provjerite dozvole.');
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Greška pri obradi.');
+      setResultImage(data.resultUrl);
+    } catch (err: any) {
+      setError(err.message || 'Došlo je do greške. Pokušajte ponovo.');
     } finally {
       setLoading(false);
     }
+  }, [uploadedImage, selectedStyle]);
+
+  const handleReset = () => {
+    setUploadedImage(null);
+    setResultImage(null);
+    setError(null);
+    if (fileInputRef.current) fileInputRef.current.value = '';
   };
-
-  const stopCamera = () => {
-    setCameraActive(false);
-    if (animFrameRef.current) {
-      cancelAnimationFrame(animFrameRef.current);
-    }
-    if (videoRef.current?.srcObject) {
-      const tracks = (videoRef.current.srcObject as MediaStream).getTracks();
-      tracks.forEach((t) => t.stop());
-      videoRef.current.srcObject = null;
-    }
-  };
-
-  const detectFaces = (landmarker: any) => {
-    const video = videoRef.current;
-    const canvas = overlayCanvasRef.current;
-    if (!video || !canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    canvas.width = video.videoWidth || 640;
-    canvas.height = video.videoHeight || 480;
-
-    let lastTime = -1;
-
-    const render = () => {
-      if (!video || video.paused || video.ended) return;
-
-      const now = performance.now();
-      if (now !== lastTime) {
-        lastTime = now;
-
-        try {
-          const results = landmarker.detectForVideo(video, now);
-
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-          if (results.faceLandmarks && results.faceLandmarks.length > 0) {
-            const landmarks = results.faceLandmarks[0];
-            drawWigOverlay(ctx, landmarks, canvas.width, canvas.height);
-          }
-        } catch (e) {
-          // silently continue
-        }
-      }
-
-      animFrameRef.current = requestAnimationFrame(render);
-    };
-
-    render();
-  };
-
-  const drawWigOverlay = (
-    ctx: CanvasRenderingContext2D,
-    landmarks: any[],
-    w: number,
-    h: number
-  ) => {
-    const wigImg = wigImageRef.current;
-    if (!wigImg) return;
-
-    // Key landmarks
-    // 10 = top of forehead (center)
-    // 234 = left temple area
-    // 454 = right temple area
-    // 152 = chin
-    // 1 = nose tip
-    
-    const forehead = landmarks[10];
-    const leftTemple = landmarks[234];
-    const rightTemple = landmarks[454];
-    const chin = landmarks[152];
-    const noseTip = landmarks[1];
-
-    // Calculate face dimensions
-    const faceWidth = Math.abs(rightTemple.x - leftTemple.x) * w;
-    const faceHeight = Math.abs(forehead.y - chin.y) * h;
-
-    // Wig dimensions
-    const wigWidth = faceWidth * selectedWig.scaleX;
-    const wigHeight = faceHeight * selectedWig.scaleY;
-
-    // Position: center horizontally on face, offset vertically above forehead
-    const centerX = ((leftTemple.x + rightTemple.x) / 2) * w;
-    const foreheadY = forehead.y * h;
-    
-    const wigX = centerX - wigWidth / 2;
-    const wigY = foreheadY + (faceHeight * selectedWig.offsetY);
-
-    // Calculate head rotation from face landmarks
-    const dx = rightTemple.x - leftTemple.x;
-    const dy = rightTemple.y - leftTemple.y;
-    const angle = Math.atan2(dy, dx);
-
-    // Draw with rotation
-    ctx.save();
-    ctx.translate(centerX, foreheadY);
-    ctx.rotate(angle);
-    
-    // Apply slight transparency for blending
-    ctx.globalAlpha = 0.88;
-    
-    // Draw wig with rounded clipping for natural look
-    ctx.beginPath();
-    const clipW = wigWidth;
-    const clipH = wigHeight;
-    const clipX = -clipW / 2;
-    const clipY = faceHeight * selectedWig.offsetY;
-    const radius = clipW * 0.08;
-    
-    ctx.moveTo(clipX + radius, clipY);
-    ctx.lineTo(clipX + clipW - radius, clipY);
-    ctx.quadraticCurveTo(clipX + clipW, clipY, clipX + clipW, clipY + radius);
-    ctx.lineTo(clipX + clipW, clipY + clipH - radius);
-    ctx.quadraticCurveTo(clipX + clipW, clipY + clipH, clipX + clipW - radius, clipY + clipH);
-    ctx.lineTo(clipX + radius, clipY + clipH);
-    ctx.quadraticCurveTo(clipX, clipY + clipH, clipX, clipY + clipH - radius);
-    ctx.lineTo(clipX, clipY + radius);
-    ctx.quadraticCurveTo(clipX, clipY, clipX + radius, clipY);
-    ctx.closePath();
-    ctx.clip();
-    
-    ctx.drawImage(wigImg, clipX, clipY, clipW, clipH);
-    
-    ctx.restore();
-  };
-
-  const takeScreenshot = () => {
-    const video = videoRef.current;
-    const overlay = overlayCanvasRef.current;
-    if (!video || !overlay) return;
-
-    const tempCanvas = document.createElement('canvas');
-    tempCanvas.width = video.videoWidth;
-    tempCanvas.height = video.videoHeight;
-    const ctx = tempCanvas.getContext('2d');
-    if (!ctx) return;
-
-    // Mirror the video (selfie mode)
-    ctx.translate(tempCanvas.width, 0);
-    ctx.scale(-1, 1);
-    ctx.drawImage(video, 0, 0);
-    
-    // Reset transform and draw overlay (also mirrored)
-    ctx.setTransform(-1, 0, 0, 1, tempCanvas.width, 0);
-    ctx.drawImage(overlay, 0, 0);
-
-    // Add branding
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.fillStyle = 'rgba(0,0,0,0.5)';
-    ctx.fillRect(0, tempCanvas.height - 50, tempCanvas.width, 50);
-    ctx.fillStyle = '#C9A96E';
-    ctx.font = 'bold 18px Inter, sans-serif';
-    ctx.fillText('EYNNA HAIR SARAJEVO', 15, tempCanvas.height - 20);
-    ctx.fillStyle = '#fff';
-    ctx.font = '14px Inter, sans-serif';
-    ctx.fillText(selectedWig.name + ' • ' + selectedWig.price, 15, tempCanvas.height - 5);
-
-    setScreenshot(tempCanvas.toDataURL('image/jpeg', 0.92));
-  };
-
-  const downloadScreenshot = () => {
-    if (!screenshot) return;
-    const link = document.createElement('a');
-    link.download = `eynna-hair-tryon-${selectedWig.id}.jpg`;
-    link.href = screenshot;
-    link.click();
-  };
-
-  useEffect(() => {
-    return () => {
-      stopCamera();
-    };
-  }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
-      {/* Camera View */}
-      <div className="relative bg-[#0a0a0a] rounded-2xl overflow-hidden border border-[#2a2a2a]">
-        {!cameraActive && !loading && (
-          <div className="aspect-[4/3] flex flex-col items-center justify-center gap-6 p-8 text-center">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#C9A96E]/20 to-[#C9A96E]/5 flex items-center justify-center">
-              <svg className="w-12 h-12 text-[#C9A96E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">Virtualno Isprobavanje Perika</h3>
-              <p className="text-gray-400 text-sm max-w-md">
-                Isprobajte naše perike uživo koristeći kameru vašeg uređaja. 
-                Odaberite periku i pogledajte kako izgleda na vama!
-              </p>
-            </div>
+    <div className="space-y-6">
+      {/* Style selector */}
+      <div>
+        <h3 className="text-white/80 text-sm font-medium mb-3">Odaberite frizuru</h3>
+        <div className="flex gap-3 overflow-x-auto pb-3 scrollbar-hide">
+          {STYLES.map((style) => (
             <button
-              onClick={startCamera}
-              className="px-8 py-3 bg-gradient-to-r from-[#C9A96E] to-[#A88B4A] text-white font-semibold rounded-full hover:shadow-[0_0_30px_rgba(201,169,110,0.3)] transition-all duration-300 hover:scale-105"
+              key={`${style.taskType}-${style.id}`}
+              onClick={() => { setSelectedStyle(style); setResultImage(null); }}
+              className={`flex-shrink-0 flex flex-col items-center gap-1.5 p-2 rounded-xl transition-all ${
+                selectedStyle.id === style.id && selectedStyle.taskType === style.taskType
+                  ? 'bg-[#C9A96E]/20 ring-2 ring-[#C9A96E]'
+                  : 'bg-white/5 hover:bg-white/10'
+              }`}
             >
-              📸 Pokreni Kameru
+              <div className="w-16 h-16 rounded-lg overflow-hidden bg-white/10">
+                <img src={style.thumb} alt={style.name} className="w-full h-full object-cover" />
+              </div>
+              <span className="text-white/70 text-xs text-center max-w-[70px] truncate">{style.name}</span>
             </button>
-            {error && (
-              <p className="text-red-400 text-sm mt-2">{error}</p>
-            )}
-          </div>
-        )}
-
-        {loading && (
-          <div className="aspect-[4/3] flex flex-col items-center justify-center gap-4">
-            <div className="w-12 h-12 border-2 border-[#C9A96E] border-t-transparent rounded-full animate-spin" />
-            <p className="text-gray-400 text-sm">Učitavanje AI modela za detekciju lica...</p>
-          </div>
-        )}
-
-        {/* Video & overlay always mounted so refs are available; hidden until camera is active */}
-        <div className={`relative aspect-[4/3] ${cameraActive ? '' : 'hidden'}`}>
-          <video
-            ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ transform: 'scaleX(-1)' }}
-            playsInline
-            muted
-          />
-          <canvas
-            ref={overlayCanvasRef}
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            style={{ transform: 'scaleX(-1)' }}
-          />
-          
-          {/* Controls overlay */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
-            <button
-              onClick={takeScreenshot}
-              className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/40 flex items-center justify-center hover:bg-white/30 transition-all"
-              title="Uslikaj"
-            >
-              <div className="w-10 h-10 rounded-full border-2 border-white" />
-            </button>
-            <button
-              onClick={stopCamera}
-              className="w-14 h-14 rounded-full bg-red-500/60 backdrop-blur-md border-2 border-red-400/40 flex items-center justify-center hover:bg-red-500/80 transition-all"
-              title="Zaustavi kameru"
-            >
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <rect x="6" y="6" width="12" height="12" rx="1" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Wig name overlay */}
-          <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md rounded-full px-4 py-2">
-            <span className="text-[#C9A96E] text-sm font-semibold">{selectedWig.name}</span>
-            <span className="text-white/60 text-xs ml-2">{selectedWig.price}</span>
-          </div>
+          ))}
         </div>
-        
-        <canvas ref={canvasRef} className="hidden" />
       </div>
 
-      {/* Wig Selector */}
-      <div className="mt-6 flex gap-4 justify-center">
-        {WIGS.map((wig) => (
-          <button
-            key={wig.id}
-            onClick={() => setSelectedWig(wig)}
-            className={`group relative rounded-xl overflow-hidden border-2 transition-all duration-300 ${
-              selectedWig.id === wig.id
-                ? 'border-[#C9A96E] shadow-[0_0_20px_rgba(201,169,110,0.3)] scale-105'
-                : 'border-[#2a2a2a] hover:border-[#C9A96E]/50'
-            }`}
-          >
-            <div className="w-28 h-28 sm:w-36 sm:h-36 relative">
-              <img
-                src={wig.image}
-                alt={wig.name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent" />
-              <div className="absolute bottom-2 left-2 right-2">
-                <p className="text-white text-xs font-semibold truncate">{wig.name}</p>
-                <p className="text-[#C9A96E] text-xs">{wig.price}</p>
+      {/* Upload / Result area */}
+      <div className="relative">
+        {!uploadedImage ? (
+          <label className="aspect-[4/3] flex flex-col items-center justify-center gap-4 border-2 border-dashed border-white/20 rounded-2xl cursor-pointer hover:border-[#C9A96E]/50 hover:bg-white/5 transition-all">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/jpg,image/png"
+              onChange={handleFileUpload}
+              className="hidden"
+            />
+            <svg className="w-16 h-16 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <div className="text-center">
+              <p className="text-[#C9A96E] font-semibold">Postavite svoju fotografiju</p>
+              <p className="text-white/40 text-sm mt-1">JPG ili PNG, maks. 10MB</p>
+              <p className="text-white/30 text-xs mt-2">Lice mora biti jasno vidljivo, gledajte ravno u kameru</p>
+            </div>
+          </label>
+        ) : (
+          <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              {/* Original */}
+              <div className="space-y-2">
+                <p className="text-white/50 text-xs text-center uppercase tracking-wider">Original</p>
+                <div className="aspect-[3/4] rounded-xl overflow-hidden bg-white/5">
+                  <img src={uploadedImage} alt="Original" className="w-full h-full object-cover" />
+                </div>
+              </div>
+
+              {/* Result */}
+              <div className="space-y-2">
+                <p className="text-white/50 text-xs text-center uppercase tracking-wider">Rezultat</p>
+                <div className="aspect-[3/4] rounded-xl overflow-hidden bg-white/5 flex items-center justify-center">
+                  {loading ? (
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="w-10 h-10 border-2 border-[#C9A96E] border-t-transparent rounded-full animate-spin" />
+                      <p className="text-white/40 text-xs">AI generiše...</p>
+                    </div>
+                  ) : resultImage ? (
+                    <img src={resultImage} alt="Rezultat" className="w-full h-full object-cover" />
+                  ) : (
+                    <p className="text-white/20 text-sm text-center px-4">
+                      Pritisnite &quot;Probaj&quot; za generisanje
+                    </p>
+                  )}
+                </div>
               </div>
             </div>
-            {selectedWig.id === wig.id && (
-              <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-[#C9A96E] flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
+
+            {/* Action buttons */}
+            <div className="flex gap-3">
+              <button
+                onClick={handleReset}
+                className="flex-1 py-3 rounded-xl bg-white/10 text-white/70 hover:bg-white/20 transition-all text-sm font-medium"
+              >
+                Nova slika
+              </button>
+              <button
+                onClick={handleTryOn}
+                disabled={loading}
+                className="flex-1 py-3 rounded-xl bg-gradient-to-r from-[#C9A96E] to-[#B8944F] text-black font-semibold hover:opacity-90 transition-all text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {loading ? 'Generiše se...' : `Probaj: ${selectedStyle.name}`}
+              </button>
+            </div>
+
+            {/* Download result */}
+            {resultImage && (
+              <a
+                href={resultImage}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="block text-center py-2 text-[#C9A96E] text-sm hover:underline"
+              >
+                ⬇ Preuzmi rezultat
+              </a>
             )}
-          </button>
-        ))}
+          </div>
+        )}
       </div>
 
-      {/* Screenshot Preview Modal */}
-      {screenshot && (
-        <div className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setScreenshot(null)}>
-          <div className="bg-[#111] rounded-2xl overflow-hidden max-w-lg w-full border border-[#2a2a2a]" onClick={(e) => e.stopPropagation()}>
-            <img src={screenshot} alt="Screenshot" className="w-full" />
-            <div className="p-4 flex gap-3 justify-center">
-              <button
-                onClick={downloadScreenshot}
-                className="px-6 py-2.5 bg-[#C9A96E] text-white rounded-full font-semibold text-sm hover:bg-[#A88B4A] transition-colors"
-              >
-                📥 Preuzmi Sliku
-              </button>
-              <button
-                onClick={() => {
-                  if (navigator.share && screenshot) {
-                    navigator.share({
-                      title: 'Eynna Hair - Virtual Try-On',
-                      text: `Pogledajte kako mi stoji ${selectedWig.name}! 💇‍♀️`,
-                      url: window.location.href,
-                    }).catch(() => {});
-                  }
-                }}
-                className="px-6 py-2.5 border border-[#C9A96E] text-[#C9A96E] rounded-full font-semibold text-sm hover:bg-[#C9A96E]/10 transition-colors"
-              >
-                📤 Podijeli
-              </button>
-              <button
-                onClick={() => setScreenshot(null)}
-                className="px-6 py-2.5 border border-gray-600 text-gray-400 rounded-full font-semibold text-sm hover:bg-gray-800 transition-colors"
-              >
-                ✕ Zatvori
-              </button>
-            </div>
-          </div>
+      {/* Error */}
+      {error && (
+        <div className="bg-red-500/10 border border-red-500/30 rounded-xl px-4 py-3">
+          <p className="text-red-400 text-sm">{error}</p>
         </div>
       )}
+
+      {/* Disclaimer */}
+      <p className="text-white/20 text-xs text-center">
+        Powered by Perfect Corp AI • Rezultati su generirani pomoću AI i mogu varirati
+      </p>
     </div>
   );
 }

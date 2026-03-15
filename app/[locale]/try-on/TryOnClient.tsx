@@ -17,14 +17,14 @@ export default function TryOnClient() {
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
         <span className="inline-block px-4 py-1.5 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 text-[#C9A96E] text-xs font-semibold uppercase tracking-wider mb-4">
-          ✨ AR Isprobavanje
+          ✨ AI Virtualno Isprobavanje
         </span>
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-          Isprobajte Perike <span className="text-[#C9A96E]">Uživo</span>
+          Isprobajte Frizure <span className="text-[#C9A96E]">AI Tehnologijom</span>
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          Koristite kameru vašeg uređaja za virtualno isprobavanje naših premium perika. 
-          Odaberite model, pogledajte kako izgleda na vama i uslikajte se!
+          Postavite svoju fotografiju i pogledajte kako biste izgledali s različitim frizurama.
+          AI tehnologija će realistično primijeniti odabranu frizuru na vašu sliku.
         </p>
       </div>
 
