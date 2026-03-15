@@ -65,19 +65,29 @@ export default function ARTryOn() {
       const { FaceLandmarker, FilesetResolver } = vision;
       
       const filesetResolver = await FilesetResolver.forVisionTasks(
-        'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm'
+        'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.18/wasm'
       );
       
-      const landmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
-        baseOptions: {
-          modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task',
-          delegate: 'GPU',
-        },
-        outputFaceBlendshapes: false,
-        outputFacialTransformationMatrixes: true,
-        runningMode: 'VIDEO',
-        numFaces: 1,
-      });
+      // Try GPU first, fall back to CPU
+      let landmarker: any = null;
+      for (const delegate of ['GPU', 'CPU'] as const) {
+        try {
+          landmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
+            baseOptions: {
+              modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task',
+              delegate,
+            },
+            outputFaceBlendshapes: false,
+            outputFacialTransformationMatrixes: true,
+            runningMode: 'VIDEO',
+            numFaces: 1,
+          });
+          break;
+        } catch (e) {
+          console.warn(`FaceLandmarker ${delegate} delegate failed:`, e);
+          if (delegate === 'CPU') throw e;
+        }
+      }
       
       setFaceLandmarker(landmarker);
       return landmarker;
@@ -113,12 +123,19 @@ export default function ARTryOn() {
       
       if (landmarker && videoRef.current) {
         setCameraActive(true);
-        setLoading(false);
         detectFaces(landmarker);
+      } else {
+        // Model failed to load — stop camera stream
+        if (videoRef.current?.srcObject) {
+          const tracks = (videoRef.current.srcObject as MediaStream).getTracks();
+          tracks.forEach((t) => t.stop());
+          videoRef.current.srcObject = null;
+        }
       }
     } catch (err) {
       console.error('Camera error:', err);
       setError('Nije moguće pristupiti kameri. Provjerite dozvole.');
+    } finally {
       setLoading(false);
     }
   };
