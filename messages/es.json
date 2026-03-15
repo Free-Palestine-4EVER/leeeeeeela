@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "shop": "Tienda",
+    "about": "Sobre nosotros",
+    "customWigs": "Pelucas a medida",
+    "careGuide": "Guía de cuidado",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Colección capilar premium",
+    "titleLine1": "Transforma",
+    "titleLine2": "Tu Belleza",
+    "description": "Pelucas de lujo, extensiones, coletas y accesorios capilares de calidad premium. Seleccionados a mano para la perfección en Sarajevo.",
+    "shopNow": "Comprar ahora",
+    "customOrder": "Peluca a medida"
+  },
+  "home": {
+    "categoriesSubtitle": "Nuestra colección",
+    "categoriesTitle": "Categorías",
+    "products": "productos",
+    "bestSellersSubtitle": "Más vendidos",
+    "bestSellersTitle": "Productos Top",
+    "aboutSubtitle": "Sobre nosotros",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo es una marca capilar premium dedicada a ofrecer pelucas, extensiones y coletas de la más alta calidad. Cada producto es cuidadosamente seleccionado para garantizar un aspecto perfecto.",
+    "aboutText2": "Utilizamos solo los mejores materiales — desde cabello humano natural hasta fibras proteicas premium. Cada producto pasa estrictos controles de calidad.",
+    "aboutProducts": "Productos",
+    "aboutQuality": "Calidad",
+    "aboutLanguages": "Idiomas",
+    "learnMore": "Saber más"
+  },
+  "testimonials": {
+    "subtitle": "Nuestras clientas dicen",
+    "title": "Experiencias de Clientes",
+    "t1": "¡La calidad de la peluca es increíble! Luce completamente natural y recibo cumplidos todos los días.",
+    "t2": "Pedí una coleta y estoy encantada con la calidad. El color coincidió perfectamente con mi cabello natural.",
+    "t3": "¡Las extensiones son preciosas! Fáciles de colocar y se ven fantásticas. Definitivamente volveré a comprar."
+  },
+  "shop": {
+    "subtitle": "Colección completa",
+    "title": "Todos los Productos",
+    "all": "Todo",
+    "noProducts": "No hay productos en esta categoría.",
+    "backToShop": "Volver a la tienda",
+    "productsCount": "productos"
+  },
+  "product": {
+    "contactForPrice": "Contáctanos para el precio",
+    "backToShop": "Volver a la tienda",
+    "quality": "Calidad",
+    "shipping": "Envío",
+    "orderWhatsApp": "Pedir por WhatsApp",
+    "contactUs": "Contáctanos",
+    "relatedProducts": "Productos relacionados"
+  },
+  "about": {
+    "subtitle": "Nuestra historia",
+    "title": "Sobre Nosotros",
+    "storyTitle": "Nuestra Historia",
+    "storyText1": "Eynna Hair Sarajevo nació de una pasión por la belleza y el deseo de que cada mujer encuentre el peinado perfecto. Desde el principio, nuestro objetivo ha sido ofrecer cabello de calidad premium a precios accesibles.",
+    "storyText2": "Con sede en Sarajevo, servimos con orgullo a clientas de Bosnia y Herzegovina y de toda Europa.",
+    "qualityTitle": "Calidad Sin Compromiso",
+    "qualityText1": "Utilizamos solo los materiales más finos — desde cabello humano 100% natural hasta fibras proteicas avanzadas que lucen y se sienten completamente naturales.",
+    "qualityText2": "Cada producto pasa estrictos controles de calidad. Nuestras pelucas cuentan con construcción mono-top y HD lace frontal para el aspecto más natural.",
+    "value1Title": "Calidad Premium",
+    "value1Text": "Solo los mejores materiales y la más fina artesanía para nuestros productos.",
+    "value2Title": "Servicio Personalizado",
+    "value2Text": "Un enfoque individual para cada compra y asesoramiento para elegir el producto perfecto.",
+    "value3Title": "Satisfacción del Cliente",
+    "value3Text": "Tu satisfacción es nuestra prioridad. Estamos dedicados a cada detalle."
+  },
+  "customWigs": {
+    "subtitle": "Una peluca según tu deseo",
+    "title": "Pelucas A Medida",
+    "description": "Ofrecemos un servicio de creación de pelucas a medida. Elige la longitud, el color, la textura y el tipo de cabello — crearemos la peluca perfecta especialmente para ti.",
+    "step1Title": "Consulta",
+    "step1Text": "Hablamos sobre tus deseos — longitud, color, textura y estilo.",
+    "step2Title": "Diseño",
+    "step2Text": "Nuestros expertos diseñan la peluca según tus especificaciones.",
+    "step3Title": "Creación",
+    "step3Text": "Hecha a mano con materiales premium para un resultado perfecto.",
+    "step4Title": "Entrega",
+    "step4Text": "Tu peluca está lista para usar — con garantía de calidad.",
+    "contactWhatsApp": "Contactar por WhatsApp"
+  },
+  "care": {
+    "subtitle": "Consejos de cuidado",
+    "title": "Cuidado del Cabello",
+    "description": "El cuidado adecuado prolongará la vida útil de tus productos capilares.",
+    "tip1Title": "Lavado",
+    "tip1Text": "Lava suavemente con champú suave en agua fría o tibia. Evita frotar con fuerza.",
+    "tip2Title": "Secado",
+    "tip2Text": "Deja secar al aire sobre un soporte para pelucas. Evita el calor directo del secador.",
+    "tip3Title": "Estilizado",
+    "tip3Text": "Usa herramientas de estilizado a baja temperatura. Para fibra proteica, evita temperaturas superiores a 180°C.",
+    "tip4Title": "Almacenamiento",
+    "tip4Text": "Guarda en un soporte para pelucas o en una redecilla en un lugar fresco y seco.",
+    "tip5Title": "Cepillado",
+    "tip5Text": "Usa un peine de dientes anchos. Comienza desde las puntas y sube hacia las raíces.",
+    "tip6Title": "Consejos Generales",
+    "tip6Text": "Evita dormir con la peluca puesta. Mantenla regularmente para una mayor durabilidad."
+  },
+  "contact": {
+    "subtitle": "Escríbenos",
+    "title": "Contacto",
+    "name": "Nombre completo",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Tu mensaje...",
+    "send": "Enviar mensaje",
+    "whatsappDesc": "Para respuestas más rápidas, contáctanos por WhatsApp.",
+    "chatNow": "Escríbenos ahora",
+    "location": "Ubicación",
+    "social": "Síguenos"
+  },
+  "footer": {
+    "brandDescription": "Marca capilar premium en Sarajevo. Pelucas de lujo, extensiones, coletas y accesorios capilares.",
+    "quickLinks": "Enlaces rápidos",
+    "allProducts": "Todos los productos",
+    "aboutUs": "Sobre nosotros",
+    "customWigsLink": "Pelucas a medida",
+    "careGuideLink": "Guía de cuidado",
+    "contactTitle": "Contacto",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Suscríbete para los últimos productos y ofertas.",
+    "emailPlaceholder": "Tu email",
+    "subscribe": "OK",
+    "rights": "Todos los derechos reservados."
+  }
+}

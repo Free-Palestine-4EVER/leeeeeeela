@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "about": "A propos",
+    "customWigs": "Perruques sur mesure",
+    "careGuide": "Guide d'entretien",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Collection capillaire premium",
+    "titleLine1": "Transformez",
+    "titleLine2": "Votre Beauté",
+    "description": "Perruques de luxe, extensions, queues de cheval et accessoires capillaires de qualité premium. Sélectionnés à la main pour la perfection à Sarajevo.",
+    "shopNow": "Acheter maintenant",
+    "customOrder": "Perruque sur mesure"
+  },
+  "home": {
+    "categoriesSubtitle": "Notre collection",
+    "categoriesTitle": "Catégories",
+    "products": "produits",
+    "bestSellersSubtitle": "Meilleures ventes",
+    "bestSellersTitle": "Produits Phares",
+    "aboutSubtitle": "A propos",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo est une marque capillaire premium dédiée à fournir des perruques, extensions et queues de cheval de la plus haute qualité. Chaque produit est soigneusement sélectionné pour garantir un look parfait.",
+    "aboutText2": "Nous utilisons uniquement les matériaux les plus fins — des cheveux humains naturels aux fibres protéiques premium. Chaque produit passe des contrôles qualité stricts.",
+    "aboutProducts": "Produits",
+    "aboutQuality": "Qualité",
+    "aboutLanguages": "Langues",
+    "learnMore": "En savoir plus"
+  },
+  "testimonials": {
+    "subtitle": "Nos clientes disent",
+    "title": "Expériences Clients",
+    "t1": "La qualité de la perruque est incroyable ! Elle a l'air totalement naturelle et je reçois des compliments chaque jour.",
+    "t2": "J'ai commandé une queue de cheval et je suis ravie de la qualité. La couleur correspondait parfaitement à mes cheveux naturels.",
+    "t3": "Les extensions sont magnifiques ! Faciles à poser et elles ont un rendu fantastique. J'achèterai certainement à nouveau."
+  },
+  "shop": {
+    "subtitle": "Collection complète",
+    "title": "Tous les Produits",
+    "all": "Tout",
+    "noProducts": "Aucun produit dans cette catégorie.",
+    "backToShop": "Retour à la boutique",
+    "productsCount": "produits"
+  },
+  "product": {
+    "contactForPrice": "Contactez-nous pour le prix",
+    "backToShop": "Retour à la boutique",
+    "quality": "Qualité",
+    "shipping": "Livraison",
+    "orderWhatsApp": "Commander via WhatsApp",
+    "contactUs": "Contactez-nous",
+    "relatedProducts": "Produits similaires"
+  },
+  "about": {
+    "subtitle": "Notre histoire",
+    "title": "A Propos",
+    "storyTitle": "Notre Histoire",
+    "storyText1": "Eynna Hair Sarajevo est né d'une passion pour la beauté et du désir que chaque femme trouve la coiffure parfaite. Depuis le début, notre objectif est d'offrir des cheveux de qualité premium à des prix abordables.",
+    "storyText2": "Basés à Sarajevo, nous servons fièrement des clientes de Bosnie-Herzégovine et de toute l'Europe.",
+    "qualityTitle": "Qualité Sans Compromis",
+    "qualityText1": "Nous utilisons uniquement les matériaux les plus fins — des cheveux humains 100% naturels aux fibres protéiques avancées qui ont l'apparence et le toucher parfaitement naturels.",
+    "qualityText2": "Chaque produit passe des contrôles qualité stricts. Nos perruques disposent d'une construction mono-top et d'un HD lace frontal pour le look le plus naturel.",
+    "value1Title": "Qualité Premium",
+    "value1Text": "Uniquement les meilleurs matériaux et les finitions les plus soignées pour nos produits.",
+    "value2Title": "Service Personnalisé",
+    "value2Text": "Une approche individuelle pour chaque achat et des conseils pour choisir le produit parfait.",
+    "value3Title": "Satisfaction Client",
+    "value3Text": "Votre satisfaction est notre priorité. Nous sommes dévoués à chaque détail."
+  },
+  "customWigs": {
+    "subtitle": "Une perruque selon vos souhaits",
+    "title": "Perruques Sur Mesure",
+    "description": "Nous offrons un service de création de perruques sur mesure. Choisissez la longueur, la couleur, la texture et le type de cheveux — nous créerons la perruque parfaite spécialement pour vous.",
+    "step1Title": "Consultation",
+    "step1Text": "Nous discutons de vos souhaits — longueur, couleur, texture et style.",
+    "step2Title": "Design",
+    "step2Text": "Nos experts conçoivent la perruque selon vos spécifications.",
+    "step3Title": "Fabrication",
+    "step3Text": "Fabrication artisanale avec des matériaux premium pour un résultat parfait.",
+    "step4Title": "Livraison",
+    "step4Text": "Votre perruque est prête à porter — avec une garantie de qualité.",
+    "contactWhatsApp": "Contacter via WhatsApp"
+  },
+  "care": {
+    "subtitle": "Conseils d'entretien",
+    "title": "Soin des Cheveux",
+    "description": "Un entretien approprié prolongera la durée de vie de vos produits capillaires.",
+    "tip1Title": "Lavage",
+    "tip1Text": "Lavez délicatement avec un shampooing doux à l'eau froide ou tiède. Évitez de frotter vigoureusement.",
+    "tip2Title": "Séchage",
+    "tip2Text": "Laissez sécher naturellement sur un support de perruque. Évitez la chaleur directe du sèche-cheveux.",
+    "tip3Title": "Coiffage",
+    "tip3Text": "Utilisez des outils de coiffage à basse température. Pour les fibres protéiques, évitez les températures supérieures à 180°C.",
+    "tip4Title": "Rangement",
+    "tip4Text": "Rangez sur un support de perruque ou dans un filet à cheveux dans un endroit frais et sec.",
+    "tip5Title": "Brossage",
+    "tip5Text": "Utilisez un peigne à dents larges. Commencez par les pointes et remontez vers les racines.",
+    "tip6Title": "Conseils Généraux",
+    "tip6Text": "Évitez de dormir avec votre perruque. Entretenez-la régulièrement pour une durée de vie prolongée."
+  },
+  "contact": {
+    "subtitle": "Contactez-nous",
+    "title": "Contact",
+    "name": "Nom complet",
+    "namePlaceholder": "Votre nom",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "votre@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Votre message...",
+    "send": "Envoyer le message",
+    "whatsappDesc": "Pour des réponses plus rapides, contactez-nous via WhatsApp.",
+    "chatNow": "Écrivez-nous maintenant",
+    "location": "Localisation",
+    "social": "Suivez-nous"
+  },
+  "footer": {
+    "brandDescription": "Marque capillaire premium à Sarajevo. Perruques de luxe, extensions, queues de cheval et accessoires capillaires.",
+    "quickLinks": "Liens rapides",
+    "allProducts": "Tous les produits",
+    "aboutUs": "A propos",
+    "customWigsLink": "Perruques sur mesure",
+    "careGuideLink": "Guide d'entretien",
+    "contactTitle": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Abonnez-vous pour les derniers produits et offres.",
+    "emailPlaceholder": "Votre email",
+    "subscribe": "OK",
+    "rights": "Tous droits réservés."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "shop": "Shop",
+    "about": "Über uns",
+    "customWigs": "Maßgeschneiderte Perücken",
+    "careGuide": "Pflegeanleitung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Premium Haarkollektion",
+    "titleLine1": "Verwandeln Sie",
+    "titleLine2": "Ihre Schönheit",
+    "description": "Luxuriöse Perücken, Extensions, Pferdeschwänze und Premium-Haaraccessoires. Handverlesen für Perfektion in Sarajevo.",
+    "shopNow": "Jetzt einkaufen",
+    "customOrder": "Perücke nach Maß"
+  },
+  "home": {
+    "categoriesSubtitle": "Unsere Kollektion",
+    "categoriesTitle": "Kategorien",
+    "products": "Produkte",
+    "bestSellersSubtitle": "Bestseller",
+    "bestSellersTitle": "Top-Produkte",
+    "aboutSubtitle": "Über uns",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo ist eine Premium-Haarmarke, die sich der Bereitstellung hochwertigster Perücken, Extensions und Pferdeschwänze widmet. Jedes Produkt wird sorgfältig ausgewählt, um ein perfektes Aussehen zu garantieren.",
+    "aboutText2": "Wir verwenden nur die feinsten Materialien — von natürlichem Echthaar bis hin zu Premium-Proteinfasern. Jedes Produkt durchläuft strenge Qualitätskontrollen.",
+    "aboutProducts": "Produkte",
+    "aboutQuality": "Qualität",
+    "aboutLanguages": "Sprachen",
+    "learnMore": "Mehr erfahren"
+  },
+  "testimonials": {
+    "subtitle": "Unsere Kundinnen sagen",
+    "title": "Kundenerfahrungen",
+    "t1": "Die Qualität der Perücke ist unglaublich! Sie sieht völlig natürlich aus und ich bekomme täglich Komplimente.",
+    "t2": "Ich habe einen Pferdeschwanz bestellt und bin begeistert von der Qualität. Die Farbe passte perfekt zu meinem Naturhaar.",
+    "t3": "Die Extensions sind wunderschön! Einfach anzubringen und sie sehen fantastisch aus. Ich werde definitiv wieder kaufen."
+  },
+  "shop": {
+    "subtitle": "Komplette Kollektion",
+    "title": "Alle Produkte",
+    "all": "Alle",
+    "noProducts": "Keine Produkte in dieser Kategorie.",
+    "backToShop": "Zurück zum Shop",
+    "productsCount": "Produkte"
+  },
+  "product": {
+    "contactForPrice": "Kontaktieren Sie uns für den Preis",
+    "backToShop": "Zurück zum Shop",
+    "quality": "Qualität",
+    "shipping": "Versand",
+    "orderWhatsApp": "Über WhatsApp bestellen",
+    "contactUs": "Kontaktieren Sie uns",
+    "relatedProducts": "Ähnliche Produkte"
+  },
+  "about": {
+    "subtitle": "Unsere Geschichte",
+    "title": "Über Uns",
+    "storyTitle": "Unsere Geschichte",
+    "storyText1": "Eynna Hair Sarajevo entstand aus einer Leidenschaft für Schönheit und dem Wunsch, dass jede Frau die perfekte Frisur findet. Von Anfang an war unser Ziel, Premium-Qualitätshaar zu erschwinglichen Preisen anzubieten.",
+    "storyText2": "Mit Sitz in Sarajevo bedienen wir stolz Kundinnen aus Bosnien und Herzegowina und ganz Europa.",
+    "qualityTitle": "Kompromisslose Qualität",
+    "qualityText1": "Wir verwenden nur die feinsten Materialien — von 100% natürlichem Echthaar bis hin zu fortschrittlichen Proteinfasern, die völlig natürlich aussehen und sich anfühlen.",
+    "qualityText2": "Jedes Produkt durchläuft strenge Qualitätskontrollen. Unsere Perücken verfügen über eine Mono-Top-Konstruktion und HD Lace Frontal für das natürlichste Aussehen.",
+    "value1Title": "Premium Qualität",
+    "value1Text": "Nur die besten Materialien und feinste Handwerkskunst für unsere Produkte.",
+    "value2Title": "Persönlicher Service",
+    "value2Text": "Ein individueller Ansatz für jeden Kauf und Beratung bei der Auswahl des perfekten Produkts.",
+    "value3Title": "Kundenzufriedenheit",
+    "value3Text": "Ihre Zufriedenheit ist unsere Priorität. Wir widmen uns jedem Detail."
+  },
+  "customWigs": {
+    "subtitle": "Eine Perücke nach Ihrem Wunsch",
+    "title": "Maßgeschneiderte Perücken",
+    "description": "Wir bieten einen Service zur individuellen Perückenherstellung an. Wählen Sie Länge, Farbe, Textur und Haartyp — wir kreieren die perfekte Perücke speziell für Sie.",
+    "step1Title": "Beratung",
+    "step1Text": "Wir besprechen Ihre Wünsche — Länge, Farbe, Textur und Stil.",
+    "step2Title": "Design",
+    "step2Text": "Unsere Experten entwerfen die Perücke nach Ihren Vorgaben.",
+    "step3Title": "Herstellung",
+    "step3Text": "Handgefertigt mit Premium-Materialien für ein perfektes Ergebnis.",
+    "step4Title": "Lieferung",
+    "step4Text": "Ihre Perücke ist fertig und tragebereit — mit Qualitätsgarantie.",
+    "contactWhatsApp": "Kontakt über WhatsApp"
+  },
+  "care": {
+    "subtitle": "Pflegetipps",
+    "title": "Haarpflege",
+    "description": "Die richtige Pflege verlängert die Lebensdauer Ihrer Haarprodukte.",
+    "tip1Title": "Waschen",
+    "tip1Text": "Sanft mit mildem Shampoo in kaltem oder lauwarmem Wasser waschen. Vermeiden Sie starkes Reiben.",
+    "tip2Title": "Trocknen",
+    "tip2Text": "Lassen Sie es auf einem Perückenständer natürlich trocknen. Vermeiden Sie direkte Föhnhitze.",
+    "tip3Title": "Styling",
+    "tip3Text": "Verwenden Sie Styling-Werkzeuge mit niedriger Temperatur. Bei Proteinfasern Hitze über 180°C vermeiden.",
+    "tip4Title": "Aufbewahrung",
+    "tip4Text": "Auf einem Perückenständer oder in einem Haarnetz an einem kühlen, trockenen Ort aufbewahren.",
+    "tip5Title": "Bürsten",
+    "tip5Text": "Verwenden Sie einen grobzinkigen Kamm. Beginnen Sie an den Spitzen und arbeiten Sie sich zum Ansatz hoch.",
+    "tip6Title": "Allgemeine Tipps",
+    "tip6Text": "Vermeiden Sie das Schlafen mit der Perücke. Pflegen Sie sie regelmäßig für eine längere Lebensdauer."
+  },
+  "contact": {
+    "subtitle": "Kontaktieren Sie uns",
+    "title": "Kontakt",
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "ihre@email.com",
+    "message": "Nachricht",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "send": "Nachricht senden",
+    "whatsappDesc": "Für schnellere Antworten kontaktieren Sie uns über WhatsApp.",
+    "chatNow": "Schreiben Sie uns jetzt",
+    "location": "Standort",
+    "social": "Folgen Sie uns"
+  },
+  "footer": {
+    "brandDescription": "Premium-Haarmarke in Sarajevo. Luxuriöse Perücken, Extensions, Pferdeschwänze und Haaraccessoires.",
+    "quickLinks": "Schnelllinks",
+    "allProducts": "Alle Produkte",
+    "aboutUs": "Über uns",
+    "customWigsLink": "Maßgeschneiderte Perücken",
+    "careGuideLink": "Pflegeanleitung",
+    "contactTitle": "Kontakt",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Abonnieren Sie für die neuesten Produkte und Angebote.",
+    "emailPlaceholder": "Ihre E-Mail",
+    "subscribe": "OK",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

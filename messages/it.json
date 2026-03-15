@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Negozio",
+    "about": "Chi siamo",
+    "customWigs": "Parrucche su misura",
+    "careGuide": "Guida alla cura",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "subtitle": "Collezione capelli premium",
+    "titleLine1": "Trasforma",
+    "titleLine2": "La Tua Bellezza",
+    "description": "Parrucche di lusso, extension, code di cavallo e accessori per capelli di qualità premium. Selezionati a mano per la perfezione a Sarajevo.",
+    "shopNow": "Acquista ora",
+    "customOrder": "Parrucca su misura"
+  },
+  "home": {
+    "categoriesSubtitle": "La nostra collezione",
+    "categoriesTitle": "Categorie",
+    "products": "prodotti",
+    "bestSellersSubtitle": "I più venduti",
+    "bestSellersTitle": "Prodotti Top",
+    "aboutSubtitle": "Chi siamo",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo è un marchio di capelli premium dedicato a fornire parrucche, extension e code di cavallo della più alta qualità. Ogni prodotto è accuratamente selezionato per garantire un aspetto perfetto.",
+    "aboutText2": "Utilizziamo solo i materiali più pregiati — dai capelli umani naturali alle fibre proteiche premium. Ogni prodotto supera rigorosi controlli di qualità.",
+    "aboutProducts": "Prodotti",
+    "aboutQuality": "Qualità",
+    "aboutLanguages": "Lingue",
+    "learnMore": "Scopri di più"
+  },
+  "testimonials": {
+    "subtitle": "Le nostre clienti dicono",
+    "title": "Esperienze dei Clienti",
+    "t1": "La qualità della parrucca è incredibile! Sembra completamente naturale e ricevo complimenti ogni giorno.",
+    "t2": "Ho ordinato una coda di cavallo e sono entusiasta della qualità. Il colore corrispondeva perfettamente ai miei capelli naturali.",
+    "t3": "Le extension sono splendide! Facili da applicare e hanno un aspetto fantastico. Sicuramente comprerò di nuovo."
+  },
+  "shop": {
+    "subtitle": "Collezione completa",
+    "title": "Tutti i Prodotti",
+    "all": "Tutto",
+    "noProducts": "Nessun prodotto in questa categoria.",
+    "backToShop": "Torna al negozio",
+    "productsCount": "prodotti"
+  },
+  "product": {
+    "contactForPrice": "Contattaci per il prezzo",
+    "backToShop": "Torna al negozio",
+    "quality": "Qualità",
+    "shipping": "Spedizione",
+    "orderWhatsApp": "Ordina tramite WhatsApp",
+    "contactUs": "Contattaci",
+    "relatedProducts": "Prodotti correlati"
+  },
+  "about": {
+    "subtitle": "La nostra storia",
+    "title": "Chi Siamo",
+    "storyTitle": "La Nostra Storia",
+    "storyText1": "Eynna Hair Sarajevo è nato dalla passione per la bellezza e dal desiderio che ogni donna trovi l'acconciatura perfetta. Fin dall'inizio, il nostro obiettivo è stato fornire capelli di qualità premium a prezzi accessibili.",
+    "storyText2": "Con sede a Sarajevo, serviamo con orgoglio clienti dalla Bosnia ed Erzegovina e da tutta l'Europa.",
+    "qualityTitle": "Qualità Senza Compromessi",
+    "qualityText1": "Utilizziamo solo i materiali più pregiati — dai capelli umani 100% naturali alle fibre proteiche avanzate che hanno un aspetto e un tocco completamente naturali.",
+    "qualityText2": "Ogni prodotto supera rigorosi controlli di qualità. Le nostre parrucche presentano una costruzione mono-top e HD lace frontal per l'aspetto più naturale.",
+    "value1Title": "Qualità Premium",
+    "value1Text": "Solo i migliori materiali e la più fine lavorazione artigianale per i nostri prodotti.",
+    "value2Title": "Servizio Personale",
+    "value2Text": "Un approccio individuale per ogni acquisto e consigli per scegliere il prodotto perfetto.",
+    "value3Title": "Soddisfazione del Cliente",
+    "value3Text": "La tua soddisfazione è la nostra priorità. Siamo dedicati ad ogni dettaglio."
+  },
+  "customWigs": {
+    "subtitle": "Una parrucca secondo i tuoi desideri",
+    "title": "Parrucche Su Misura",
+    "description": "Offriamo un servizio di creazione di parrucche su misura. Scegli lunghezza, colore, texture e tipo di capelli — creeremo la parrucca perfetta appositamente per te.",
+    "step1Title": "Consulenza",
+    "step1Text": "Discutiamo i tuoi desideri — lunghezza, colore, texture e stile.",
+    "step2Title": "Design",
+    "step2Text": "I nostri esperti progettano la parrucca secondo le tue specifiche.",
+    "step3Title": "Realizzazione",
+    "step3Text": "Realizzata a mano con materiali premium per un risultato perfetto.",
+    "step4Title": "Consegna",
+    "step4Text": "La tua parrucca è pronta da indossare — con garanzia di qualità.",
+    "contactWhatsApp": "Contattare tramite WhatsApp"
+  },
+  "care": {
+    "subtitle": "Consigli per la cura",
+    "title": "Cura dei Capelli",
+    "description": "Una cura adeguata prolungherà la durata dei tuoi prodotti per capelli.",
+    "tip1Title": "Lavaggio",
+    "tip1Text": "Lava delicatamente con shampoo delicato in acqua fredda o tiepida. Evita di strofinare energicamente.",
+    "tip2Title": "Asciugatura",
+    "tip2Text": "Lascia asciugare naturalmente su un supporto per parrucche. Evita il calore diretto del phon.",
+    "tip3Title": "Styling",
+    "tip3Text": "Usa strumenti per lo styling a bassa temperatura. Per le fibre proteiche, evita temperature superiori a 180°C.",
+    "tip4Title": "Conservazione",
+    "tip4Text": "Conserva su un supporto per parrucche o in una retina per capelli in un luogo fresco e asciutto.",
+    "tip5Title": "Spazzolatura",
+    "tip5Text": "Usa un pettine a denti larghi. Inizia dalle punte e risali verso le radici.",
+    "tip6Title": "Consigli Generali",
+    "tip6Text": "Evita di dormire con la parrucca. Mantienila regolarmente per una maggiore durata."
+  },
+  "contact": {
+    "subtitle": "Scrivici",
+    "title": "Contatti",
+    "name": "Nome completo",
+    "namePlaceholder": "Il tuo nome",
+    "email": "Indirizzo e-mail",
+    "emailPlaceholder": "tuo@email.com",
+    "message": "Messaggio",
+    "messagePlaceholder": "Il tuo messaggio...",
+    "send": "Invia messaggio",
+    "whatsappDesc": "Per risposte più rapide, contattaci tramite WhatsApp.",
+    "chatNow": "Scrivici ora",
+    "location": "Posizione",
+    "social": "Seguici"
+  },
+  "footer": {
+    "brandDescription": "Marchio di capelli premium a Sarajevo. Parrucche di lusso, extension, code di cavallo e accessori per capelli.",
+    "quickLinks": "Link rapidi",
+    "allProducts": "Tutti i prodotti",
+    "aboutUs": "Chi siamo",
+    "customWigsLink": "Parrucche su misura",
+    "careGuideLink": "Guida alla cura",
+    "contactTitle": "Contatti",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Iscriviti per gli ultimi prodotti e offerte.",
+    "emailPlaceholder": "La tua email",
+    "subscribe": "OK",
+    "rights": "Tutti i diritti riservati."
+  }
+}

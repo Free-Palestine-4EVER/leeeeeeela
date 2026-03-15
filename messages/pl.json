@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "shop": "Sklep",
+    "about": "O nas",
+    "customWigs": "Peruki na zamówienie",
+    "careGuide": "Przewodnik pielęgnacji",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Kolekcja włosów premium",
+    "titleLine1": "Odmień",
+    "titleLine2": "Swoje Piękno",
+    "description": "Luksusowe peruki, doczepiane włosy, kucyki i akcesoria do włosów premium. Ręcznie wyselekcjonowane dla perfekcji w Sarajewie.",
+    "shopNow": "Kup teraz",
+    "customOrder": "Peruka na zamówienie"
+  },
+  "home": {
+    "categoriesSubtitle": "Nasza kolekcja",
+    "categoriesTitle": "Kategorie",
+    "products": "produktów",
+    "bestSellersSubtitle": "Najlepiej sprzedające się",
+    "bestSellersTitle": "Top Produkty",
+    "aboutSubtitle": "O nas",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo to premium marka włosów poświęcona dostarczaniu najwyższej jakości peruk, doczepianych włosów i kucyków. Każdy produkt jest starannie dobrany, aby zapewnić doskonały wygląd.",
+    "aboutText2": "Używamy wyłącznie najlepszych materiałów — od naturalnych ludzkich włosów po premium włókna proteinowe. Każdy produkt przechodzi ścisłe kontrole jakości.",
+    "aboutProducts": "Produktów",
+    "aboutQuality": "Jakość",
+    "aboutLanguages": "Języków",
+    "learnMore": "Dowiedz się więcej"
+  },
+  "testimonials": {
+    "subtitle": "Nasze klientki mówią",
+    "title": "Doświadczenia Klientek",
+    "t1": "Jakość peruki jest niesamowita! Wygląda zupełnie naturalnie i codziennie otrzymuję komplementy.",
+    "t2": "Zamówiłam kucyk i jestem zachwycona jakością. Kolor idealnie pasował do moich naturalnych włosów.",
+    "t3": "Doczepiane włosy są piękne! Łatwe w założeniu i wyglądają fantastycznie. Na pewno kupię ponownie."
+  },
+  "shop": {
+    "subtitle": "Pełna kolekcja",
+    "title": "Wszystkie Produkty",
+    "all": "Wszystko",
+    "noProducts": "Brak produktów w tej kategorii.",
+    "backToShop": "Powrót do sklepu",
+    "productsCount": "produktów"
+  },
+  "product": {
+    "contactForPrice": "Skontaktuj się w sprawie ceny",
+    "backToShop": "Powrót do sklepu",
+    "quality": "Jakość",
+    "shipping": "Wysyłka",
+    "orderWhatsApp": "Zamów przez WhatsApp",
+    "contactUs": "Skontaktuj się z nami",
+    "relatedProducts": "Podobne produkty"
+  },
+  "about": {
+    "subtitle": "Nasza historia",
+    "title": "O Nas",
+    "storyTitle": "Nasza Historia",
+    "storyText1": "Eynna Hair Sarajevo narodziło się z pasji do piękna i pragnienia, aby każda kobieta znalazła idealną fryzurę. Od samego początku naszym celem było zapewnienie włosów premium w przystępnych cenach.",
+    "storyText2": "Z siedzibą w Sarajewie z dumą obsługujemy klientki z Bośni i Hercegowiny oraz całej Europy.",
+    "qualityTitle": "Jakość Bez Kompromisów",
+    "qualityText1": "Używamy wyłącznie najlepszych materiałów — od 100% naturalnych ludzkich włosów po zaawansowane włókna proteinowe, które wyglądają i czują się całkowicie naturalnie.",
+    "qualityText2": "Każdy produkt przechodzi ścisłe kontrole jakości. Nasze peruki posiadają konstrukcję mono-top i HD lace frontal dla najbardziej naturalnego wyglądu.",
+    "value1Title": "Jakość Premium",
+    "value1Text": "Tylko najlepsze materiały i najlepsza jakość wykonania dla naszych produktów.",
+    "value2Title": "Osobista Obsługa",
+    "value2Text": "Indywidualne podejście do każdego zakupu i porady przy wyborze idealnego produktu.",
+    "value3Title": "Zadowolenie Klientek",
+    "value3Text": "Twoje zadowolenie jest naszym priorytetem. Jesteśmy oddani każdemu szczegółowi."
+  },
+  "customWigs": {
+    "subtitle": "Peruka według Twojego życzenia",
+    "title": "Peruki Na Zamówienie",
+    "description": "Oferujemy usługę tworzenia peruk na zamówienie. Wybierz długość, kolor, teksturę i rodzaj włosów — stworzymy idealną perukę specjalnie dla Ciebie.",
+    "step1Title": "Konsultacja",
+    "step1Text": "Omawiamy Twoje życzenia — długość, kolor, teksturę i styl.",
+    "step2Title": "Projektowanie",
+    "step2Text": "Nasi eksperci projektują perukę zgodnie z Twoimi specyfikacjami.",
+    "step3Title": "Wykonanie",
+    "step3Text": "Ręcznie wykonana z materiałów premium dla idealnego efektu.",
+    "step4Title": "Dostawa",
+    "step4Text": "Twoja peruka jest gotowa do noszenia — z gwarancją jakości.",
+    "contactWhatsApp": "Kontakt przez WhatsApp"
+  },
+  "care": {
+    "subtitle": "Wskazówki pielęgnacyjne",
+    "title": "Pielęgnacja Włosów",
+    "description": "Prawidłowa pielęgnacja wydłuży żywotność Twoich produktów do włosów.",
+    "tip1Title": "Mycie",
+    "tip1Text": "Myj delikatnie łagodnym szamponem w zimnej lub letniej wodzie. Unikaj intensywnego pocierania.",
+    "tip2Title": "Suszenie",
+    "tip2Text": "Pozostaw do naturalnego wyschnięcia na stojaku na peruki. Unikaj bezpośredniego ciepła z suszarki.",
+    "tip3Title": "Stylizacja",
+    "tip3Text": "Używaj narzędzi do stylizacji na niskiej temperaturze. Dla włókna proteinowego unikaj temperatury powyżej 180°C.",
+    "tip4Title": "Przechowywanie",
+    "tip4Text": "Przechowuj na stojaku na peruki lub w siatce na włosy w chłodnym, suchym miejscu.",
+    "tip5Title": "Szczotkowanie",
+    "tip5Text": "Używaj grzebienia o szerokich ząbkach. Zacznij od końcówek i posuwaj się w stronę nasady.",
+    "tip6Title": "Ogólne Wskazówki",
+    "tip6Text": "Unikaj spania w peruce. Regularnie ją pielęgnuj, aby wydłużyć jej żywotność."
+  },
+  "contact": {
+    "subtitle": "Napisz do nas",
+    "title": "Kontakt",
+    "name": "Imię i nazwisko",
+    "namePlaceholder": "Twoje imię",
+    "email": "Adres e-mail",
+    "emailPlaceholder": "twoj@email.com",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Twoja wiadomość...",
+    "send": "Wyślij wiadomość",
+    "whatsappDesc": "Dla szybszych odpowiedzi skontaktuj się z nami przez WhatsApp.",
+    "chatNow": "Napisz do nas teraz",
+    "location": "Lokalizacja",
+    "social": "Obserwuj nas"
+  },
+  "footer": {
+    "brandDescription": "Premium marka włosów w Sarajewie. Luksusowe peruki, doczepiane włosy, kucyki i akcesoria do włosów.",
+    "quickLinks": "Szybkie linki",
+    "allProducts": "Wszystkie produkty",
+    "aboutUs": "O nas",
+    "customWigsLink": "Peruki na zamówienie",
+    "careGuideLink": "Przewodnik pielęgnacji",
+    "contactTitle": "Kontakt",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Zapisz się, aby otrzymywać najnowsze produkty i oferty.",
+    "emailPlaceholder": "Twój email",
+    "subscribe": "OK",
+    "rights": "Wszelkie prawa zastrzeżone."
+  }
+}

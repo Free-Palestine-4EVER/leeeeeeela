@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Početna",
+    "shop": "Trgovina",
+    "about": "O nama",
+    "customWigs": "Perike po mjeri",
+    "careGuide": "Njega kose",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Premium kolekcija kose",
+    "titleLine1": "Promijenite",
+    "titleLine2": "Svoju Ljepotu",
+    "description": "Luksuzne perike, ekstenzije, repovi i dodaci za kosu premium kvalitete. Ručno odabrano za savršenstvo u Sarajevu.",
+    "shopNow": "Kupujte sada",
+    "customOrder": "Perika po mjeri"
+  },
+  "home": {
+    "categoriesSubtitle": "Naša kolekcija",
+    "categoriesTitle": "Kategorije",
+    "products": "proizvoda",
+    "bestSellersSubtitle": "Najprodavanije",
+    "bestSellersTitle": "Top Proizvodi",
+    "aboutSubtitle": "O nama",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo je premium brend za kosu posvećen pružanju najkvalitetnijih perika, ekstenzija i repova. Svaki proizvod je pažljivo odabran kako bi garantirao savršen izgled.",
+    "aboutText2": "Koristimo samo najfinije materijale — od prirodne ljudske kose do premium proteinskih vlakana. Svaki proizvod prolazi stroge kontrole kvalitete.",
+    "aboutProducts": "Proizvoda",
+    "aboutQuality": "Kvaliteta",
+    "aboutLanguages": "Jezika",
+    "learnMore": "Saznajte više"
+  },
+  "testimonials": {
+    "subtitle": "Naše kupce kažu",
+    "title": "Iskustva Kupaca",
+    "t1": "Kvaliteta perike je nevjerojatna! Izgleda potpuno prirodno i svakodnevno dobivam komplimente.",
+    "t2": "Naručila sam rep i oduševljena sam kvalitetom. Boja je savršeno odgovarala mojoj prirodnoj kosi.",
+    "t3": "Ekstenzije su prelijepe! Lako se postavljaju i izgledaju fantastično. Definitivno ću ponovno kupiti."
+  },
+  "shop": {
+    "subtitle": "Kompletna kolekcija",
+    "title": "Svi Proizvodi",
+    "all": "Sve",
+    "noProducts": "Nema proizvoda u ovoj kategoriji.",
+    "backToShop": "Natrag u trgovinu",
+    "productsCount": "proizvoda"
+  },
+  "product": {
+    "contactForPrice": "Kontaktirajte nas za cijenu",
+    "backToShop": "Natrag u trgovinu",
+    "quality": "Kvaliteta",
+    "shipping": "Dostava",
+    "orderWhatsApp": "Naručite putem WhatsApp",
+    "contactUs": "Kontaktirajte nas",
+    "relatedProducts": "Slični proizvodi"
+  },
+  "about": {
+    "subtitle": "Naša priča",
+    "title": "O Nama",
+    "storyTitle": "Naša Priča",
+    "storyText1": "Eynna Hair Sarajevo je nastao iz strasti prema ljepoti i želje da svaka žena pronađe savršenu frizuru. Od samog početka, naš cilj je bio pružiti premium kvalitetu kose po pristupačnim cijenama.",
+    "storyText2": "Sa sjedištem u Sarajevu, ponosno opslužujemo kupce iz Bosne i Hercegovine i cijele Europe.",
+    "qualityTitle": "Kvaliteta Bez Kompromisa",
+    "qualityText1": "Koristimo samo najfinije materijale — od 100% prirodne ljudske kose do naprednih proteinskih vlakana koja izgledaju i osjećaju se potpuno prirodno.",
+    "qualityText2": "Svaki proizvod prolazi stroge kontrole kvalitete. Naše perike imaju mono-top konstrukciju i HD lace frontal za najprirodniji izgled.",
+    "value1Title": "Premium Kvaliteta",
+    "value1Text": "Samo najbolji materijali i najfinija izrada za naše proizvode.",
+    "value2Title": "Osobna Usluga",
+    "value2Text": "Individualni pristup svakoj kupovini i savjeti za odabir savršenog proizvoda.",
+    "value3Title": "Zadovoljstvo Kupaca",
+    "value3Text": "Vaše zadovoljstvo je naš prioritet. Posvećeni smo svakom detalju."
+  },
+  "customWigs": {
+    "subtitle": "Perika po vašoj želji",
+    "title": "Perike Po Mjeri",
+    "description": "Nudimo uslugu izrade perika po narudžbi. Odaberite duljinu, boju, teksturu i tip kose — mi ćemo izraditi savršenu periku specijalno za vas.",
+    "step1Title": "Savjetovanje",
+    "step1Text": "Razgovaramo o vašim željama — duljina, boja, tekstura i stil.",
+    "step2Title": "Dizajn",
+    "step2Text": "Naši stručnjaci dizajniraju periku prema vašim specifikacijama.",
+    "step3Title": "Izrada",
+    "step3Text": "Ručna izrada s premium materijalima za savršen rezultat.",
+    "step4Title": "Dostava",
+    "step4Text": "Vaša perika je spremna za nošenje — s jamstvom kvalitete.",
+    "contactWhatsApp": "Kontaktirajte putem WhatsApp"
+  },
+  "care": {
+    "subtitle": "Savjeti za njegu",
+    "title": "Njega Kose",
+    "description": "Pravilna njega će produžiti vijek trajanja vaših proizvoda za kosu.",
+    "tip1Title": "Pranje",
+    "tip1Text": "Perite nježno s blagim šamponom u hladnoj ili mlakoj vodi. Izbjegavajte grubo trljanje.",
+    "tip2Title": "Sušenje",
+    "tip2Text": "Ostavite da se prirodno osuši na stalku za perike. Izbjegavajte izravnu toplinu sušila.",
+    "tip3Title": "Stiliziranje",
+    "tip3Text": "Koristite alate za stiliziranje na niskoj temperaturi. Za proteinsko vlakno izbjegavajte temperature iznad 180°C.",
+    "tip4Title": "Čuvanje",
+    "tip4Text": "Čuvajte na stalku za perike ili u mrežici za kosu na hladnom, suhom mjestu.",
+    "tip5Title": "Četkanje",
+    "tip5Text": "Koristite češalj sa širokim zupcima. Počnite od vrhova i radite prema korijenu.",
+    "tip6Title": "Opći Savjeti",
+    "tip6Text": "Izbjegavajte spavanje s perikom. Redovito je održavajte za dulji vijek trajanja."
+  },
+  "contact": {
+    "subtitle": "Javite nam se",
+    "title": "Kontakt",
+    "name": "Ime i prezime",
+    "namePlaceholder": "Vaše ime",
+    "email": "Email adresa",
+    "emailPlaceholder": "vaš@email.com",
+    "message": "Poruka",
+    "messagePlaceholder": "Vaša poruka...",
+    "send": "Pošaljite poruku",
+    "whatsappDesc": "Za brže odgovore kontaktirajte nas putem WhatsApp-a.",
+    "chatNow": "Pišite nam sada",
+    "location": "Lokacija",
+    "social": "Pratite nas"
+  },
+  "footer": {
+    "brandDescription": "Premium brend za kosu u Sarajevu. Luksuzne perike, ekstenzije, repovi i dodaci za kosu.",
+    "quickLinks": "Brzi linkovi",
+    "allProducts": "Svi proizvodi",
+    "aboutUs": "O nama",
+    "customWigsLink": "Perike po mjeri",
+    "careGuideLink": "Njega kose",
+    "contactTitle": "Kontakt",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Pretplatite se za najnovije proizvode i ponude.",
+    "emailPlaceholder": "Vaš email",
+    "subscribe": "OK",
+    "rights": "Sva prava pridržana."
+  }
+}

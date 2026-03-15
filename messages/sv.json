@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Hem",
+    "shop": "Butik",
+    "about": "Om oss",
+    "customWigs": "Skräddarsydda peruker",
+    "careGuide": "Vårdguide",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Premium hårkollektion",
+    "titleLine1": "Förvandla",
+    "titleLine2": "Din Skönhet",
+    "description": "Lyxiga peruker, löshår, hästsvansar och premium håraccessoarer. Handplockade för perfektion i Sarajevo.",
+    "shopNow": "Handla nu",
+    "customOrder": "Skräddarsydd peruk"
+  },
+  "home": {
+    "categoriesSubtitle": "Vår kollektion",
+    "categoriesTitle": "Kategorier",
+    "products": "produkter",
+    "bestSellersSubtitle": "Bästsäljare",
+    "bestSellersTitle": "Toppprodukter",
+    "aboutSubtitle": "Om oss",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo är ett premium hårmärke dedikerat till att erbjuda peruker, löshår och hästsvansar av högsta kvalitet. Varje produkt är noggrant utvald för att garantera ett perfekt utseende.",
+    "aboutText2": "Vi använder bara de finaste materialen — från naturligt människohår till premium proteinfibrer. Varje produkt genomgår strikta kvalitetskontroller.",
+    "aboutProducts": "Produkter",
+    "aboutQuality": "Kvalitet",
+    "aboutLanguages": "Språk",
+    "learnMore": "Läs mer"
+  },
+  "testimonials": {
+    "subtitle": "Våra kunder säger",
+    "title": "Kundupplevelser",
+    "t1": "Kvaliteten på peruken är otrolig! Den ser helt naturlig ut och jag får komplimanger varje dag.",
+    "t2": "Jag beställde en hästsvans och jag är hänförd av kvaliteten. Färgen matchade mitt naturliga hår perfekt.",
+    "t3": "Löshåret är fantastiskt! Lätt att sätta fast och det ser underbart ut. Jag kommer definitivt att köpa igen."
+  },
+  "shop": {
+    "subtitle": "Komplett kollektion",
+    "title": "Alla Produkter",
+    "all": "Alla",
+    "noProducts": "Inga produkter i denna kategori.",
+    "backToShop": "Tillbaka till butiken",
+    "productsCount": "produkter"
+  },
+  "product": {
+    "contactForPrice": "Kontakta oss för pris",
+    "backToShop": "Tillbaka till butiken",
+    "quality": "Kvalitet",
+    "shipping": "Frakt",
+    "orderWhatsApp": "Beställ via WhatsApp",
+    "contactUs": "Kontakta oss",
+    "relatedProducts": "Relaterade produkter"
+  },
+  "about": {
+    "subtitle": "Vår historia",
+    "title": "Om Oss",
+    "storyTitle": "Vår Historia",
+    "storyText1": "Eynna Hair Sarajevo skapades ur en passion för skönhet och önskan att varje kvinna ska hitta den perfekta frisyren. Från allra första början har vårt mål varit att erbjuda premium kvalitetshår till överkomliga priser.",
+    "storyText2": "Med bas i Sarajevo betjänar vi stolt kunder från Bosnien och Hercegovina och hela Europa.",
+    "qualityTitle": "Kompromisslös Kvalitet",
+    "qualityText1": "Vi använder bara de finaste materialen — från 100% naturligt människohår till avancerade proteinfibrer som ser ut och känns helt naturliga.",
+    "qualityText2": "Varje produkt genomgår strikta kvalitetskontroller. Våra peruker har mono-top konstruktion och HD lace frontal för det mest naturliga utseendet.",
+    "value1Title": "Premium Kvalitet",
+    "value1Text": "Bara de bästa materialen och det finaste hantverket för våra produkter.",
+    "value2Title": "Personlig Service",
+    "value2Text": "Ett individuellt tillvägagångssätt för varje köp och rådgivning för att välja den perfekta produkten.",
+    "value3Title": "Kundnöjdhet",
+    "value3Text": "Din tillfredsställelse är vår prioritet. Vi är hängivna till varje detalj."
+  },
+  "customWigs": {
+    "subtitle": "En peruk efter din önskan",
+    "title": "Skräddarsydda Peruker",
+    "description": "Vi erbjuder en skräddarsydd perukservice. Välj längd, färg, textur och hårtyp — vi skapar den perfekta peruken speciellt för dig.",
+    "step1Title": "Konsultation",
+    "step1Text": "Vi diskuterar dina önskemål — längd, färg, textur och stil.",
+    "step2Title": "Design",
+    "step2Text": "Våra experter designar peruken enligt dina specifikationer.",
+    "step3Title": "Tillverkning",
+    "step3Text": "Handgjord med premiummaterial för ett perfekt resultat.",
+    "step4Title": "Leverans",
+    "step4Text": "Din peruk är redo att bäras — med kvalitetsgaranti.",
+    "contactWhatsApp": "Kontakta via WhatsApp"
+  },
+  "care": {
+    "subtitle": "Vårdtips",
+    "title": "Hårvård",
+    "description": "Rätt vård förlänger livslängden på dina hårprodukter.",
+    "tip1Title": "Tvätt",
+    "tip1Text": "Tvätta försiktigt med milt schampo i kallt eller ljummet vatten. Undvik att gnugga hårt.",
+    "tip2Title": "Torkning",
+    "tip2Text": "Låt torka naturligt på ett perukställ. Undvik direkt värme från en hårtork.",
+    "tip3Title": "Styling",
+    "tip3Text": "Använd stylingverktyg på låg temperatur. För proteinfiber, undvik värme över 180°C.",
+    "tip4Title": "Förvaring",
+    "tip4Text": "Förvara på ett perukställ eller i ett hårnät på en sval, torr plats.",
+    "tip5Title": "Borstning",
+    "tip5Text": "Använd en kam med breda tänder. Börja från spetsarna och arbeta dig uppåt mot rötterna.",
+    "tip6Title": "Allmänna Tips",
+    "tip6Text": "Undvik att sova med peruken. Vårda den regelbundet för längre livslängd."
+  },
+  "contact": {
+    "subtitle": "Hör av dig",
+    "title": "Kontakt",
+    "name": "Fullständigt namn",
+    "namePlaceholder": "Ditt namn",
+    "email": "E-postadress",
+    "emailPlaceholder": "din@email.com",
+    "message": "Meddelande",
+    "messagePlaceholder": "Ditt meddelande...",
+    "send": "Skicka meddelande",
+    "whatsappDesc": "För snabbare svar, kontakta oss via WhatsApp.",
+    "chatNow": "Skriv till oss nu",
+    "location": "Plats",
+    "social": "Följ oss"
+  },
+  "footer": {
+    "brandDescription": "Premium hårmärke i Sarajevo. Lyxiga peruker, löshår, hästsvansar och håraccessoarer.",
+    "quickLinks": "Snabblänkar",
+    "allProducts": "Alla produkter",
+    "aboutUs": "Om oss",
+    "customWigsLink": "Skräddarsydda peruker",
+    "careGuideLink": "Vårdguide",
+    "contactTitle": "Kontakt",
+    "newsletter": "Nyhetsbrev",
+    "newsletterDesc": "Prenumerera för de senaste produkterna och erbjudandena.",
+    "emailPlaceholder": "Din email",
+    "subscribe": "OK",
+    "rights": "Alla rättigheter förbehållna."
+  }
+}

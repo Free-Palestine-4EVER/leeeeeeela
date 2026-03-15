@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Winkel",
+    "about": "Over ons",
+    "customWigs": "Pruiken op maat",
+    "careGuide": "Verzorgingsgids",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Premium haarcollectie",
+    "titleLine1": "Transformeer",
+    "titleLine2": "Jouw Schoonheid",
+    "description": "Luxe pruiken, extensions, paardenstaarten en premium haaraccessoires. Met de hand geselecteerd voor perfectie in Sarajevo.",
+    "shopNow": "Nu winkelen",
+    "customOrder": "Pruik op maat"
+  },
+  "home": {
+    "categoriesSubtitle": "Onze collectie",
+    "categoriesTitle": "Categorieën",
+    "products": "producten",
+    "bestSellersSubtitle": "Bestverkocht",
+    "bestSellersTitle": "Topproducten",
+    "aboutSubtitle": "Over ons",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo is een premium haarmerk dat zich richt op het leveren van pruiken, extensions en paardenstaarten van de hoogste kwaliteit. Elk product is zorgvuldig geselecteerd om een perfect uiterlijk te garanderen.",
+    "aboutText2": "We gebruiken alleen de fijnste materialen — van natuurlijk menselijk haar tot premium proteïnevezels. Elk product ondergaat strenge kwaliteitscontroles.",
+    "aboutProducts": "Producten",
+    "aboutQuality": "Kwaliteit",
+    "aboutLanguages": "Talen",
+    "learnMore": "Meer weten"
+  },
+  "testimonials": {
+    "subtitle": "Onze klanten zeggen",
+    "title": "Klantervaringen",
+    "t1": "De kwaliteit van de pruik is ongelooflijk! Het ziet er volledig natuurlijk uit en ik krijg elke dag complimenten.",
+    "t2": "Ik heb een paardenstaart besteld en ik ben dol op de kwaliteit. De kleur paste perfect bij mijn natuurlijke haar.",
+    "t3": "De extensions zijn prachtig! Makkelijk aan te brengen en ze zien er fantastisch uit. Ik ga zeker opnieuw bestellen."
+  },
+  "shop": {
+    "subtitle": "Complete collectie",
+    "title": "Alle Producten",
+    "all": "Alles",
+    "noProducts": "Geen producten in deze categorie.",
+    "backToShop": "Terug naar winkel",
+    "productsCount": "producten"
+  },
+  "product": {
+    "contactForPrice": "Neem contact op voor de prijs",
+    "backToShop": "Terug naar winkel",
+    "quality": "Kwaliteit",
+    "shipping": "Verzending",
+    "orderWhatsApp": "Bestellen via WhatsApp",
+    "contactUs": "Neem contact op",
+    "relatedProducts": "Gerelateerde producten"
+  },
+  "about": {
+    "subtitle": "Ons verhaal",
+    "title": "Over Ons",
+    "storyTitle": "Ons Verhaal",
+    "storyText1": "Eynna Hair Sarajevo is ontstaan uit een passie voor schoonheid en de wens dat elke vrouw het perfecte kapsel vindt. Vanaf het begin was ons doel om premium kwaliteitshaar tegen betaalbare prijzen aan te bieden.",
+    "storyText2": "Vanuit Sarajevo bedienen wij met trots klanten uit Bosnië en Herzegovina en heel Europa.",
+    "qualityTitle": "Compromisloze Kwaliteit",
+    "qualityText1": "We gebruiken alleen de fijnste materialen — van 100% natuurlijk menselijk haar tot geavanceerde proteïnevezels die er volledig natuurlijk uitzien en aanvoelen.",
+    "qualityText2": "Elk product ondergaat strenge kwaliteitscontroles. Onze pruiken hebben een mono-top constructie en HD lace frontal voor de meest natuurlijke uitstraling.",
+    "value1Title": "Premium Kwaliteit",
+    "value1Text": "Alleen de beste materialen en het fijnste vakmanschap voor onze producten.",
+    "value2Title": "Persoonlijke Service",
+    "value2Text": "Een individuele benadering bij elke aankoop en advies bij het kiezen van het perfecte product.",
+    "value3Title": "Klanttevredenheid",
+    "value3Text": "Jouw tevredenheid is onze prioriteit. We zijn toegewijd aan elk detail."
+  },
+  "customWigs": {
+    "subtitle": "Een pruik naar jouw wens",
+    "title": "Pruiken Op Maat",
+    "description": "Wij bieden een service voor het maken van pruiken op maat. Kies de lengte, kleur, textuur en haartype — wij creëren de perfecte pruik speciaal voor jou.",
+    "step1Title": "Consult",
+    "step1Text": "We bespreken jouw wensen — lengte, kleur, textuur en stijl.",
+    "step2Title": "Ontwerp",
+    "step2Text": "Onze experts ontwerpen de pruik volgens jouw specificaties.",
+    "step3Title": "Creatie",
+    "step3Text": "Handgemaakt met premium materialen voor een perfect resultaat.",
+    "step4Title": "Levering",
+    "step4Text": "Jouw pruik is klaar om te dragen — met kwaliteitsgarantie.",
+    "contactWhatsApp": "Contact via WhatsApp"
+  },
+  "care": {
+    "subtitle": "Verzorgingstips",
+    "title": "Haarverzorging",
+    "description": "De juiste verzorging verlengt de levensduur van jouw haarproducten.",
+    "tip1Title": "Wassen",
+    "tip1Text": "Was voorzichtig met milde shampoo in koud of lauwwarm water. Vermijd hard wrijven.",
+    "tip2Title": "Drogen",
+    "tip2Text": "Laat natuurlijk drogen op een pruikenstandaard. Vermijd directe hitte van een föhn.",
+    "tip3Title": "Styling",
+    "tip3Text": "Gebruik stylingtools op lage temperatuur. Vermijd bij proteïnevezels temperaturen boven 180°C.",
+    "tip4Title": "Opslag",
+    "tip4Text": "Bewaar op een pruikenstandaard of in een haarnetje op een koele, droge plek.",
+    "tip5Title": "Borstelen",
+    "tip5Text": "Gebruik een kam met brede tanden. Begin bij de punten en werk naar boven naar de wortels.",
+    "tip6Title": "Algemene Tips",
+    "tip6Text": "Vermijd slapen met je pruik op. Onderhoud deze regelmatig voor een langere levensduur."
+  },
+  "contact": {
+    "subtitle": "Neem contact op",
+    "title": "Contact",
+    "name": "Volledige naam",
+    "namePlaceholder": "Jouw naam",
+    "email": "E-mailadres",
+    "emailPlaceholder": "jouw@email.com",
+    "message": "Bericht",
+    "messagePlaceholder": "Jouw bericht...",
+    "send": "Bericht versturen",
+    "whatsappDesc": "Voor snellere antwoorden, neem contact met ons op via WhatsApp.",
+    "chatNow": "Stuur ons nu een bericht",
+    "location": "Locatie",
+    "social": "Volg ons"
+  },
+  "footer": {
+    "brandDescription": "Premium haarmerk in Sarajevo. Luxe pruiken, extensions, paardenstaarten en haaraccessoires.",
+    "quickLinks": "Snelkoppelingen",
+    "allProducts": "Alle producten",
+    "aboutUs": "Over ons",
+    "customWigsLink": "Pruiken op maat",
+    "careGuideLink": "Verzorgingsgids",
+    "contactTitle": "Contact",
+    "newsletter": "Nieuwsbrief",
+    "newsletterDesc": "Abonneer je voor de nieuwste producten en aanbiedingen.",
+    "emailPlaceholder": "Jouw email",
+    "subscribe": "OK",
+    "rights": "Alle rechten voorbehouden."
+  }
+}

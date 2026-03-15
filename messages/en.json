@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "customWigs": "Custom Wigs",
+    "careGuide": "Care Guide",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Premium Hair Collection",
+    "titleLine1": "Transform",
+    "titleLine2": "Your Beauty",
+    "description": "Luxury wigs, extensions, ponytails, and premium quality hair accessories. Handpicked for perfection in Sarajevo.",
+    "shopNow": "Shop Now",
+    "customOrder": "Custom Wig"
+  },
+  "home": {
+    "categoriesSubtitle": "Our Collection",
+    "categoriesTitle": "Categories",
+    "products": "products",
+    "bestSellersSubtitle": "Best Sellers",
+    "bestSellersTitle": "Top Products",
+    "aboutSubtitle": "About Us",
+    "aboutTitle": "Eynna Hair Sarajevo",
+    "aboutText1": "Eynna Hair Sarajevo is a premium hair brand dedicated to providing the highest quality wigs, extensions, and ponytails. Every product is carefully selected to guarantee a perfect look.",
+    "aboutText2": "We use only the finest materials — from natural human hair to premium protein fibers. Every product undergoes strict quality controls.",
+    "aboutProducts": "Products",
+    "aboutQuality": "Quality",
+    "aboutLanguages": "Languages",
+    "learnMore": "Learn More"
+  },
+  "testimonials": {
+    "subtitle": "Our Customers Say",
+    "title": "Customer Experiences",
+    "t1": "The quality of the wig is incredible! It looks completely natural and I receive compliments every day.",
+    "t2": "I ordered a ponytail and I am thrilled with the quality. The color matched my natural hair perfectly.",
+    "t3": "The extensions are gorgeous! Easy to install and they look fantastic. I will definitely be buying again."
+  },
+  "shop": {
+    "subtitle": "Complete Collection",
+    "title": "All Products",
+    "all": "All",
+    "noProducts": "No products in this category.",
+    "backToShop": "Back to Shop",
+    "productsCount": "products"
+  },
+  "product": {
+    "contactForPrice": "Contact us for price",
+    "backToShop": "Back to Shop",
+    "quality": "Quality",
+    "shipping": "Shipping",
+    "orderWhatsApp": "Order via WhatsApp",
+    "contactUs": "Contact Us",
+    "relatedProducts": "Related Products"
+  },
+  "about": {
+    "subtitle": "Our Story",
+    "title": "About Us",
+    "storyTitle": "Our Story",
+    "storyText1": "Eynna Hair Sarajevo was born from a passion for beauty and the desire for every woman to find the perfect hairstyle. From the very beginning, our goal has been to provide premium quality hair at affordable prices.",
+    "storyText2": "Based in Sarajevo, we proudly serve customers from Bosnia and Herzegovina and all across Europe.",
+    "qualityTitle": "Uncompromising Quality",
+    "qualityText1": "We use only the finest materials — from 100% natural human hair to advanced protein fibers that look and feel completely natural.",
+    "qualityText2": "Every product undergoes strict quality controls. Our wigs feature mono-top construction and HD lace frontal for the most natural look.",
+    "value1Title": "Premium Quality",
+    "value1Text": "Only the best materials and finest craftsmanship for our products.",
+    "value2Title": "Personal Service",
+    "value2Text": "An individual approach to every purchase and advice on choosing the perfect product.",
+    "value3Title": "Customer Satisfaction",
+    "value3Text": "Your satisfaction is our priority. We are dedicated to every detail."
+  },
+  "customWigs": {
+    "subtitle": "A wig made to your wish",
+    "title": "Custom Wigs",
+    "description": "We offer a custom wig creation service. Choose the length, color, texture, and hair type — we will create the perfect wig specially for you.",
+    "step1Title": "Consultation",
+    "step1Text": "We discuss your wishes — length, color, texture, and style.",
+    "step2Title": "Design",
+    "step2Text": "Our experts design the wig according to your specifications.",
+    "step3Title": "Creation",
+    "step3Text": "Handmade with premium materials for a perfect result.",
+    "step4Title": "Delivery",
+    "step4Text": "Your wig is ready to wear — with a quality guarantee.",
+    "contactWhatsApp": "Contact via WhatsApp"
+  },
+  "care": {
+    "subtitle": "Care Tips",
+    "title": "Hair Care",
+    "description": "Proper care will extend the lifespan of your hair products.",
+    "tip1Title": "Washing",
+    "tip1Text": "Wash gently with mild shampoo in cold or lukewarm water. Avoid rough scrubbing.",
+    "tip2Title": "Drying",
+    "tip2Text": "Let it air dry naturally on a wig stand. Avoid direct heat from a blow dryer.",
+    "tip3Title": "Styling",
+    "tip3Text": "Use low-temperature styling tools. For protein fiber, avoid temperatures above 180°C.",
+    "tip4Title": "Storage",
+    "tip4Text": "Store on a wig stand or in a hair net in a cool, dry place.",
+    "tip5Title": "Brushing",
+    "tip5Text": "Use a wide-tooth comb. Start from the ends and work your way up to the roots.",
+    "tip6Title": "General Tips",
+    "tip6Text": "Avoid sleeping with your wig on. Maintain it regularly for a longer lifespan."
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "title": "Contact",
+    "name": "Full Name",
+    "namePlaceholder": "Your name",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Your message...",
+    "send": "Send Message",
+    "whatsappDesc": "For faster responses, contact us via WhatsApp.",
+    "chatNow": "Chat with Us Now",
+    "location": "Location",
+    "social": "Follow Us"
+  },
+  "footer": {
+    "brandDescription": "Premium hair brand in Sarajevo. Luxury wigs, extensions, ponytails, and hair accessories.",
+    "quickLinks": "Quick Links",
+    "allProducts": "All Products",
+    "aboutUs": "About Us",
+    "customWigsLink": "Custom Wigs",
+    "careGuideLink": "Care Guide",
+    "contactTitle": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Subscribe for the latest products and offers.",
+    "emailPlaceholder": "Your email",
+    "subscribe": "OK",
+    "rights": "All rights reserved."
+  }
+}
